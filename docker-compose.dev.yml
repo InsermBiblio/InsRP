@@ -1,0 +1,16 @@
+rp:
+    image: bibcnrs/shibboleth-sp
+    ports:
+        - 443:443
+    environment:
+        http_proxy: ${http_proxy}
+        https_proxy: ${https_proxy}
+        APPLI_APACHE_SERVERNAME: "https://bib-preprod.cnrs.fr"
+        APPLI_APACHE_SERVERADMIN: "bibcnrs@dev.fr"
+        APPLI_APACHE_LOGLEVEL: "info ssl:warn"
+        DOCKER_HOST_IP: ${DOCKER_HOST_IP}
+    working_dir: /var/www/html
+    volumes:
+        - ./shibboleth/:/etc/shibboleth/
+        - ./shibboleth/ssl:/etc/shibboleth/ssl
+        - ./apache2/sites-available:/etc/apache2/sites-available
