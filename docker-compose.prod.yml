@@ -1,5 +1,5 @@
 rp:
-    image: bibcnrs/shibboleth-sp
+    image: insermbiblio/shibboleth-sp
     ports:
         - 8443:443
     environment:

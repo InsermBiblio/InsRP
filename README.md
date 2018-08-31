@@ -1,9 +1,9 @@
-# BibRP
+# InsRP
 
-The bibcnrs reverse proxy in charge of authenticating users through [fédération d'identités Education-Recherche](https://federation.renater.fr/registry?action=get_all)
+Reverse proxy in charge of authenticating users through [fédération d'identités Education-Recherche](https://federation.renater.fr/registry?action=get_all)
 
 
-Application in charge of the bibcnrs reverse proxy. The embedded shibboleth federated  authentication feature will allow users in the ESR to authenticate with their individual institutionnal account (example: [Janus](https://janus.cnrs.fr) for the CNRS).
+Application in charge of the insermbiblio reverse proxy. The embedded shibboleth federated  authentication feature will allow users to authenticate with their individual institutionnal account.
 
 ## Configuration
 
