@@ -1,4 +1,7 @@
-rp:
+version: "2"
+ 
+services:
+  rp:
     image: insermbiblio/shibboleth-sp
     ports:
         - 8443:443
