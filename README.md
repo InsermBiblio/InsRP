@@ -13,19 +13,19 @@ Notice: the servier.key is critical and should not be shared.
 2) If necessary, edit parameters in ``*.env.sh`` files.
 Parameters example:
 ```bash
-export APPLI_APACHE_SERVERNAME="https://bib.cnrs.fr"
-export APPLI_APACHE_SERVERADMIN="bibcnrs@inist.fr"
-export APPLI_APACHE_LOGLEVEL="info ssl:warn"
+   export APPLI_APACHE_SERVERNAME="https://insermbiblio.inserm.fr"
+   export APPLI_APACHE_SERVERADMIN="insermbiblio@inist.fr"
+   export APPLI_APACHE_LOGLEVEL="info ssl:warn"
 ```
 
 ## Start the application
 
-To start https://bib.cnrs.fr
+To start https://insermbiblio.inserm.fr
 ```bash
 make run-prod
 ```
 
-To start https://bib-preprod.cnrs.fr
+To start https://insermbiblio-preprod.inist.fr
 ```bash
 make run-dev
 ```
